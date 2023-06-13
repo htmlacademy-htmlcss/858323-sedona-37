@@ -8,7 +8,7 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <a href="index.html" class="logo-link">
       <img class="logo-image" src="images/logo.svg" width="50" height="50" alt="логотип">
     </a>
@@ -45,7 +45,7 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner" data-test="main">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -58,7 +58,7 @@
       </ul>
     </header>
 
-    <section class="catalog-products">
+    <section class="catalog-products" data-test="filter">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
 
@@ -132,7 +132,7 @@
         <span class="visually-hidden">Показать список</span>
       </a>
     </section>
-
+    <section class="hotels" data-test="catalog">
     <ul class="hotel-list">
 
       <li class="hotel-card">
@@ -179,7 +179,7 @@
         <a href="#" class="hotel-card-button button"></a>
       </li>
     </ul>
-
+    </section>
     <ul class="pagination">
       <li class="pagination-item">
         <a href="#" class="pagination-link pagination-current">1</a>
@@ -201,8 +201,8 @@
 
   </main>
 
-  <footer class="footer-page">
-    <section class="footer">
+  <footer class="footer-page" data-test="footer">
+    <section class="footer" data-test="subscribe">
       <h2 class="footer-mail">Подпишитесь на рассылку</h2>
       <p class="offer">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru" class="newsletter-form" method="post">
